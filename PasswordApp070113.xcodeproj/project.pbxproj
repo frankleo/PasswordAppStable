@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72DCAAF1783640E00D84315 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72DCAAE1783640E00D84315 /* QuartzCore.framework */; };
+		A72DCAB11783641700D84315 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72DCAB01783641700D84315 /* CoreData.framework */; };
+		A72DCAB4178364AF00D84315 /* home_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A72DCAB3178364AF00D84315 /* home_btn.png */; };
+		A72DCAF1178364F200D84315 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAB9178364F200D84315 /* MagicalImportFunctions.m */; };
+		A72DCAF2178364F200D84315 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCABB178364F200D84315 /* NSAttributeDescription+MagicalDataImport.m */; };
+		A72DCAF3178364F200D84315 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCABD178364F200D84315 /* NSEntityDescription+MagicalDataImport.m */; };
+		A72DCAF4178364F200D84315 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCABF178364F200D84315 /* NSNumber+MagicalDataImport.m */; };
+		A72DCAF5178364F200D84315 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAC1178364F200D84315 /* NSObject+MagicalDataImport.m */; };
+		A72DCAF6178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAC3178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		A72DCAF7178364F200D84315 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAC5178364F200D84315 /* NSString+MagicalDataImport.m */; };
+		A72DCAF8178364F200D84315 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAC8178364F200D84315 /* NSManagedObject+MagicalAggregation.m */; };
+		A72DCAF9178364F200D84315 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCACA178364F200D84315 /* NSManagedObject+MagicalDataImport.m */; };
+		A72DCAFA178364F200D84315 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCACC178364F200D84315 /* NSManagedObject+MagicalFinders.m */; };
+		A72DCAFB178364F200D84315 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCACE178364F200D84315 /* NSManagedObject+MagicalRecord.m */; };
+		A72DCAFC178364F200D84315 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAD0178364F200D84315 /* NSManagedObject+MagicalRequests.m */; };
+		A72DCAFD178364F200D84315 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAD3178364F200D84315 /* NSManagedObjectContext+MagicalObserving.m */; };
+		A72DCAFE178364F200D84315 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAD5178364F200D84315 /* NSManagedObjectContext+MagicalRecord.m */; };
+		A72DCAFF178364F200D84315 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAD7178364F200D84315 /* NSManagedObjectContext+MagicalSaves.m */; };
+		A72DCB00178364F200D84315 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAD9178364F200D84315 /* NSManagedObjectContext+MagicalThreading.m */; };
+		A72DCB01178364F200D84315 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCADB178364F200D84315 /* NSManagedObjectModel+MagicalRecord.m */; };
+		A72DCB02178364F200D84315 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCADD178364F200D84315 /* NSPersistentStore+MagicalRecord.m */; };
+		A72DCB03178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCADF178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		A72DCB04178364F200D84315 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAE2178364F200D84315 /* MagicalRecord+Actions.m */; };
+		A72DCB05178364F200D84315 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAE4178364F200D84315 /* MagicalRecord+ErrorHandling.m */; };
+		A72DCB06178364F200D84315 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAE6178364F200D84315 /* MagicalRecord+iCloud.m */; };
+		A72DCB07178364F200D84315 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAE8178364F200D84315 /* MagicalRecord+Options.m */; };
+		A72DCB08178364F200D84315 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAEA178364F200D84315 /* MagicalRecord+Setup.m */; };
+		A72DCB09178364F200D84315 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAEC178364F200D84315 /* MagicalRecord+ShorthandSupport.m */; };
+		A72DCB0A178364F200D84315 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCAEE178364F200D84315 /* MagicalRecord.m */; };
+		A72DCB0E178365B500D84315 /* AccountModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A72DCB0C178365B500D84315 /* AccountModel.xcdatamodeld */; };
+		A72DCB201783692F00D84315 /* HomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCB1E1783692F00D84315 /* HomeCollectionViewController.m */; };
+		A72DCB211783692F00D84315 /* HomeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72DCB1F1783692F00D84315 /* HomeCollectionViewController.xib */; };
+		A72DCB2D1783BC1700D84315 /* btn_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A72DCB2A1783BC1700D84315 /* btn_2.png */; };
+		A72DCB2E1783BC1700D84315 /* btn_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A72DCB2B1783BC1700D84315 /* btn_3.png */; };
+		A72DCB5117850CFA00D84315 /* LockerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72DCB5017850CFA00D84315 /* LockerCollectionViewCell.xib */; };
+		A72DCB5417850DCC00D84315 /* LockerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A72DCB5317850DCC00D84315 /* LockerCollectionViewCell.m */; };
+		C5AAAE2D178A07F600E560F1 /* btn_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AAAE2C178A07F600E560F1 /* btn_4.png */; };
+		C5AAAE30178A68D600E560F1 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAE2F178A68D600E560F1 /* Account.m */; };
+		C5AAAE33178A68D700E560F1 /* LockerName.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AAAE32178A68D700E560F1 /* LockerName.m */; };
+		E12019241782568100898AB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12019231782568100898AB3 /* UIKit.framework */; };
+		E12019261782568100898AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12019251782568100898AB3 /* Foundation.framework */; };
+		E12019281782568100898AB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12019271782568100898AB3 /* CoreGraphics.framework */; };
+		E120192E1782568100898AB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E120192C1782568100898AB3 /* InfoPlist.strings */; };
+		E12019301782568100898AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E120192F1782568100898AB3 /* main.m */; };
+		E12019341782568100898AB3 /* QCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12019331782568100898AB3 /* QCAppDelegate.m */; };
+		E12019361782568100898AB3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E12019351782568100898AB3 /* Default.png */; };
+		E12019381782568100898AB3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E12019371782568100898AB3 /* Default@2x.png */; };
+		E120193A1782568100898AB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E12019391782568100898AB3 /* Default-568h@2x.png */; };
+		E120193D1782568100898AB3 /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E120193C1782568100898AB3 /* QCViewController.m */; };
+		E12019401782568100898AB3 /* QCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E120193E1782568100898AB3 /* QCViewController.xib */; };
+		E120194B1782578200898AB3 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12019491782578200898AB3 /* SignInViewController.m */; };
+		E120194C1782578200898AB3 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E120194A1782578200898AB3 /* SignInViewController.xib */; };
+		E1201951178257D300898AB3 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E120194F178257D300898AB3 /* CreateAccountViewController.m */; };
+		E1201952178257D300898AB3 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1201950178257D300898AB3 /* CreateAccountViewController.xib */; };
+		E12019571782582300898AB3 /* PasswordFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12019551782582300898AB3 /* PasswordFeedViewController.m */; };
+		E12019581782582300898AB3 /* PasswordFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12019561782582300898AB3 /* PasswordFeedViewController.xib */; };
+		E1201963178258C800898AB3 /* AddLockerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1201961178258C800898AB3 /* AddLockerViewController.m */; };
+		E1201964178258C800898AB3 /* AddLockerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1201962178258C800898AB3 /* AddLockerViewController.xib */; };
+		E1201969178258E400898AB3 /* PasswordItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1201967178258E400898AB3 /* PasswordItemViewController.m */; };
+		E120196A178258E400898AB3 /* PasswordItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1201968178258E400898AB3 /* PasswordItemViewController.xib */; };
+		E120196F178258FE00898AB3 /* AddPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E120196D178258FE00898AB3 /* AddPasswordViewController.m */; };
+		E1201970178258FE00898AB3 /* AddPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E120196E178258FE00898AB3 /* AddPasswordViewController.xib */; };
+		E12019751782592A00898AB3 /* EditPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12019731782592A00898AB3 /* EditPasswordViewController.m */; };
+		E12019761782592A00898AB3 /* EditPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12019741782592A00898AB3 /* EditPasswordViewController.xib */; };
+		E120197B1782595A00898AB3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E12019791782595A00898AB3 /* SettingsViewController.m */; };
+		E120197C1782595A00898AB3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E120197A1782595A00898AB3 /* SettingsViewController.xib */; };
+		E1201981178259AD00898AB3 /* AutoLogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E120197F178259AD00898AB3 /* AutoLogoutViewController.m */; };
+		E1201982178259AD00898AB3 /* AutoLogoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1201980178259AD00898AB3 /* AutoLogoutViewController.xib */; };
+		E1201987178259E700898AB3 /* ResetMasterPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1201985178259E700898AB3 /* ResetMasterPasswordViewController.m */; };
+		E1201988178259E700898AB3 /* ResetMasterPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1201986178259E700898AB3 /* ResetMasterPasswordViewController.xib */; };
+		E120198C17825A5C00898AB3 /* CustomSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E120198B17825A5C00898AB3 /* CustomSwitchCell.m */; };
+		E120199117825ABC00898AB3 /* CustomSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E120199017825ABC00898AB3 /* CustomSwitchCell.xib */; };
+		E1361473178B98D300497B3C /* btn_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E1361472178B98D300497B3C /* btn_1.png */; };
+		E1361475178BA8AA00497B3C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1361474178BA8A900497B3C /* MessageUI.framework */; };
+		E136147A178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1361478178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.m */; };
+		E136147B178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1361479178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A72DCAAE1783640E00D84315 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A72DCAB01783641700D84315 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A72DCAB3178364AF00D84315 /* home_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_btn.png; sourceTree = "<group>"; };
+		A72DCAB8178364F200D84315 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
+		A72DCAB9178364F200D84315 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
+		A72DCABA178364F200D84315 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCABB178364F200D84315 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCABC178364F200D84315 /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCABD178364F200D84315 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCABE178364F200D84315 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCABF178364F200D84315 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCAC0178364F200D84315 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCAC1178364F200D84315 /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCAC2178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCAC3178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCAC4178364F200D84315 /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCAC5178364F200D84315 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCAC7178364F200D84315 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		A72DCAC8178364F200D84315 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		A72DCAC9178364F200D84315 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		A72DCACA178364F200D84315 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A72DCACB178364F200D84315 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		A72DCACC178364F200D84315 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
+		A72DCACD178364F200D84315 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCACE178364F200D84315 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		A72DCACF178364F200D84315 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		A72DCAD0178364F200D84315 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		A72DCAD2178364F200D84315 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		A72DCAD3178364F200D84315 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		A72DCAD4178364F200D84315 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCAD5178364F200D84315 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		A72DCAD6178364F200D84315 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		A72DCAD7178364F200D84315 /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		A72DCAD8178364F200D84315 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		A72DCAD9178364F200D84315 /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		A72DCADA178364F200D84315 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCADB178364F200D84315 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		A72DCADC178364F200D84315 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCADD178364F200D84315 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		A72DCADE178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCADF178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
+		A72DCAE1178364F200D84315 /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		A72DCAE2178364F200D84315 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Actions.m"; sourceTree = "<group>"; };
+		A72DCAE3178364F200D84315 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		A72DCAE4178364F200D84315 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		A72DCAE5178364F200D84315 /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		A72DCAE6178364F200D84315 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		A72DCAE7178364F200D84315 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		A72DCAE8178364F200D84315 /* MagicalRecord+Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		A72DCAE9178364F200D84315 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		A72DCAEA178364F200D84315 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		A72DCAEB178364F200D84315 /* MagicalRecord+ShorthandSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+ShorthandSupport.h"; sourceTree = "<group>"; };
+		A72DCAEC178364F200D84315 /* MagicalRecord+ShorthandSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+ShorthandSupport.m"; sourceTree = "<group>"; };
+		A72DCAED178364F200D84315 /* MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecord.h; sourceTree = "<group>"; };
+		A72DCAEE178364F200D84315 /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
+		A72DCAEF178364F200D84315 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
+		A72DCAF0178364F200D84315 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
+		A72DCB0D178365B500D84315 /* AccountModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountModel.xcdatamodel; sourceTree = "<group>"; };
+		A72DCB1D1783692F00D84315 /* HomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewController.h; sourceTree = "<group>"; };
+		A72DCB1E1783692F00D84315 /* HomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewController.m; sourceTree = "<group>"; };
+		A72DCB1F1783692F00D84315 /* HomeCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewController.xib; sourceTree = "<group>"; };
+		A72DCB2A1783BC1700D84315 /* btn_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_2.png; sourceTree = "<group>"; };
+		A72DCB2B1783BC1700D84315 /* btn_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_3.png; sourceTree = "<group>"; };
+		A72DCB5017850CFA00D84315 /* LockerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LockerCollectionViewCell.xib; path = ../LockerCollectionViewCell.xib; sourceTree = "<group>"; };
+		A72DCB5217850DCC00D84315 /* LockerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerCollectionViewCell.h; sourceTree = "<group>"; };
+		A72DCB5317850DCC00D84315 /* LockerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerCollectionViewCell.m; sourceTree = "<group>"; };
+		C5AAAE2C178A07F600E560F1 /* btn_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_4.png; sourceTree = "<group>"; };
+		C5AAAE2E178A68D600E560F1 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		C5AAAE2F178A68D600E560F1 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		C5AAAE31178A68D700E560F1 /* LockerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockerName.h; sourceTree = "<group>"; };
+		C5AAAE32178A68D700E560F1 /* LockerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockerName.m; sourceTree = "<group>"; };
+		E12019201782568100898AB3 /* PasswordApp070113.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordApp070113.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12019231782568100898AB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E12019251782568100898AB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E12019271782568100898AB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E120192B1782568100898AB3 /* PasswordApp070113-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasswordApp070113-Info.plist"; sourceTree = "<group>"; };
+		E120192D1782568100898AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E120192F1782568100898AB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E12019311782568100898AB3 /* PasswordApp070113-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordApp070113-Prefix.pch"; sourceTree = "<group>"; };
+		E12019321782568100898AB3 /* QCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCAppDelegate.h; sourceTree = "<group>"; };
+		E12019331782568100898AB3 /* QCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCAppDelegate.m; sourceTree = "<group>"; };
+		E12019351782568100898AB3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E12019371782568100898AB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E12019391782568100898AB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E120193B1782568100898AB3 /* QCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
+		E120193C1782568100898AB3 /* QCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
+		E120193F1782568100898AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QCViewController.xib; sourceTree = "<group>"; };
+		E12019481782578200898AB3 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		E12019491782578200898AB3 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		E120194A1782578200898AB3 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		E120194E178257D300898AB3 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		E120194F178257D300898AB3 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		E1201950178257D300898AB3 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		E12019541782582300898AB3 /* PasswordFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordFeedViewController.h; sourceTree = "<group>"; };
+		E12019551782582300898AB3 /* PasswordFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordFeedViewController.m; sourceTree = "<group>"; };
+		E12019561782582300898AB3 /* PasswordFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordFeedViewController.xib; sourceTree = "<group>"; };
+		E1201960178258C800898AB3 /* AddLockerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLockerViewController.h; sourceTree = "<group>"; };
+		E1201961178258C800898AB3 /* AddLockerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLockerViewController.m; sourceTree = "<group>"; };
+		E1201962178258C800898AB3 /* AddLockerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddLockerViewController.xib; sourceTree = "<group>"; };
+		E1201966178258E400898AB3 /* PasswordItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordItemViewController.h; sourceTree = "<group>"; };
+		E1201967178258E400898AB3 /* PasswordItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordItemViewController.m; sourceTree = "<group>"; };
+		E1201968178258E400898AB3 /* PasswordItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordItemViewController.xib; sourceTree = "<group>"; };
+		E120196C178258FE00898AB3 /* AddPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPasswordViewController.h; sourceTree = "<group>"; };
+		E120196D178258FE00898AB3 /* AddPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPasswordViewController.m; sourceTree = "<group>"; };
+		E120196E178258FE00898AB3 /* AddPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPasswordViewController.xib; sourceTree = "<group>"; };
+		E12019721782592A00898AB3 /* EditPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPasswordViewController.h; sourceTree = "<group>"; };
+		E12019731782592A00898AB3 /* EditPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPasswordViewController.m; sourceTree = "<group>"; };
+		E12019741782592A00898AB3 /* EditPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPasswordViewController.xib; sourceTree = "<group>"; };
+		E12019781782595A00898AB3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E12019791782595A00898AB3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E120197A1782595A00898AB3 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		E120197E178259AD00898AB3 /* AutoLogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLogoutViewController.h; sourceTree = "<group>"; };
+		E120197F178259AD00898AB3 /* AutoLogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLogoutViewController.m; sourceTree = "<group>"; };
+		E1201980178259AD00898AB3 /* AutoLogoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLogoutViewController.xib; sourceTree = "<group>"; };
+		E1201984178259E700898AB3 /* ResetMasterPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetMasterPasswordViewController.h; sourceTree = "<group>"; };
+		E1201985178259E700898AB3 /* ResetMasterPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetMasterPasswordViewController.m; sourceTree = "<group>"; };
+		E1201986178259E700898AB3 /* ResetMasterPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResetMasterPasswordViewController.xib; sourceTree = "<group>"; };
+		E120198A17825A5C00898AB3 /* CustomSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSwitchCell.h; sourceTree = "<group>"; };
+		E120198B17825A5C00898AB3 /* CustomSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSwitchCell.m; sourceTree = "<group>"; };
+		E120199017825ABC00898AB3 /* CustomSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitchCell.xib; sourceTree = "<group>"; };
+		E1361472178B98D300497B3C /* btn_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_1.png; path = ../btn_1.png; sourceTree = "<group>"; };
+		E1361474178BA8A900497B3C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E1361477178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmResetMasterPasswordViewController.h; sourceTree = "<group>"; };
+		E1361478178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmResetMasterPasswordViewController.m; sourceTree = "<group>"; };
+		E1361479178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmResetMasterPasswordViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E120191D1782568100898AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1361475178BA8AA00497B3C /* MessageUI.framework in Frameworks */,
+				A72DCAB11783641700D84315 /* CoreData.framework in Frameworks */,
+				A72DCAAF1783640E00D84315 /* QuartzCore.framework in Frameworks */,
+				E12019241782568100898AB3 /* UIKit.framework in Frameworks */,
+				E12019261782568100898AB3 /* Foundation.framework in Frameworks */,
+				E12019281782568100898AB3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72DCAB21783643300D84315 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E1361472178B98D300497B3C /* btn_1.png */,
+				C5AAAE2C178A07F600E560F1 /* btn_4.png */,
+				A72DCB2A1783BC1700D84315 /* btn_2.png */,
+				A72DCB2B1783BC1700D84315 /* btn_3.png */,
+				A72DCAB3178364AF00D84315 /* home_btn.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A72DCAB5178364F200D84315 /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAB6178364F200D84315 /* Categories */,
+				A72DCAE0178364F200D84315 /* Core */,
+				A72DCAF0178364F200D84315 /* CoreData+MagicalRecord.h */,
+			);
+			name = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		A72DCAB6178364F200D84315 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAB7178364F200D84315 /* DataImport */,
+				A72DCAC6178364F200D84315 /* NSManagedObject */,
+				A72DCAD1178364F200D84315 /* NSManagedObjectContext */,
+				A72DCADA178364F200D84315 /* NSManagedObjectModel+MagicalRecord.h */,
+				A72DCADB178364F200D84315 /* NSManagedObjectModel+MagicalRecord.m */,
+				A72DCADC178364F200D84315 /* NSPersistentStore+MagicalRecord.h */,
+				A72DCADD178364F200D84315 /* NSPersistentStore+MagicalRecord.m */,
+				A72DCADE178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				A72DCADF178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A72DCAB7178364F200D84315 /* DataImport */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAB8178364F200D84315 /* MagicalImportFunctions.h */,
+				A72DCAB9178364F200D84315 /* MagicalImportFunctions.m */,
+				A72DCABA178364F200D84315 /* NSAttributeDescription+MagicalDataImport.h */,
+				A72DCABB178364F200D84315 /* NSAttributeDescription+MagicalDataImport.m */,
+				A72DCABC178364F200D84315 /* NSEntityDescription+MagicalDataImport.h */,
+				A72DCABD178364F200D84315 /* NSEntityDescription+MagicalDataImport.m */,
+				A72DCABE178364F200D84315 /* NSNumber+MagicalDataImport.h */,
+				A72DCABF178364F200D84315 /* NSNumber+MagicalDataImport.m */,
+				A72DCAC0178364F200D84315 /* NSObject+MagicalDataImport.h */,
+				A72DCAC1178364F200D84315 /* NSObject+MagicalDataImport.m */,
+				A72DCAC2178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.h */,
+				A72DCAC3178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.m */,
+				A72DCAC4178364F200D84315 /* NSString+MagicalDataImport.h */,
+				A72DCAC5178364F200D84315 /* NSString+MagicalDataImport.m */,
+			);
+			path = DataImport;
+			sourceTree = "<group>";
+		};
+		A72DCAC6178364F200D84315 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAC7178364F200D84315 /* NSManagedObject+MagicalAggregation.h */,
+				A72DCAC8178364F200D84315 /* NSManagedObject+MagicalAggregation.m */,
+				A72DCAC9178364F200D84315 /* NSManagedObject+MagicalDataImport.h */,
+				A72DCACA178364F200D84315 /* NSManagedObject+MagicalDataImport.m */,
+				A72DCACB178364F200D84315 /* NSManagedObject+MagicalFinders.h */,
+				A72DCACC178364F200D84315 /* NSManagedObject+MagicalFinders.m */,
+				A72DCACD178364F200D84315 /* NSManagedObject+MagicalRecord.h */,
+				A72DCACE178364F200D84315 /* NSManagedObject+MagicalRecord.m */,
+				A72DCACF178364F200D84315 /* NSManagedObject+MagicalRequests.h */,
+				A72DCAD0178364F200D84315 /* NSManagedObject+MagicalRequests.m */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		A72DCAD1178364F200D84315 /* NSManagedObjectContext */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAD2178364F200D84315 /* NSManagedObjectContext+MagicalObserving.h */,
+				A72DCAD3178364F200D84315 /* NSManagedObjectContext+MagicalObserving.m */,
+				A72DCAD4178364F200D84315 /* NSManagedObjectContext+MagicalRecord.h */,
+				A72DCAD5178364F200D84315 /* NSManagedObjectContext+MagicalRecord.m */,
+				A72DCAD6178364F200D84315 /* NSManagedObjectContext+MagicalSaves.h */,
+				A72DCAD7178364F200D84315 /* NSManagedObjectContext+MagicalSaves.m */,
+				A72DCAD8178364F200D84315 /* NSManagedObjectContext+MagicalThreading.h */,
+				A72DCAD9178364F200D84315 /* NSManagedObjectContext+MagicalThreading.m */,
+			);
+			path = NSManagedObjectContext;
+			sourceTree = "<group>";
+		};
+		A72DCAE0178364F200D84315 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAE1178364F200D84315 /* MagicalRecord+Actions.h */,
+				A72DCAE2178364F200D84315 /* MagicalRecord+Actions.m */,
+				A72DCAE3178364F200D84315 /* MagicalRecord+ErrorHandling.h */,
+				A72DCAE4178364F200D84315 /* MagicalRecord+ErrorHandling.m */,
+				A72DCAE5178364F200D84315 /* MagicalRecord+iCloud.h */,
+				A72DCAE6178364F200D84315 /* MagicalRecord+iCloud.m */,
+				A72DCAE7178364F200D84315 /* MagicalRecord+Options.h */,
+				A72DCAE8178364F200D84315 /* MagicalRecord+Options.m */,
+				A72DCAE9178364F200D84315 /* MagicalRecord+Setup.h */,
+				A72DCAEA178364F200D84315 /* MagicalRecord+Setup.m */,
+				A72DCAEB178364F200D84315 /* MagicalRecord+ShorthandSupport.h */,
+				A72DCAEC178364F200D84315 /* MagicalRecord+ShorthandSupport.m */,
+				A72DCAED178364F200D84315 /* MagicalRecord.h */,
+				A72DCAEE178364F200D84315 /* MagicalRecord.m */,
+				A72DCAEF178364F200D84315 /* MagicalRecordShorthand.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A72DCB0B1783653500D84315 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCAB21783643300D84315 /* Images */,
+				A72DCAB5178364F200D84315 /* MagicalRecord */,
+			);
+			name = Library;
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		A72DCB161783665F00D84315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCB0C178365B500D84315 /* AccountModel.xcdatamodeld */,
+				C5AAAE31178A68D700E560F1 /* LockerName.h */,
+				C5AAAE32178A68D700E560F1 /* LockerName.m */,
+				C5AAAE2E178A68D600E560F1 /* Account.h */,
+				C5AAAE2F178A68D600E560F1 /* Account.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E12019171782568100898AB3 = {
+			isa = PBXGroup;
+			children = (
+				E12019291782568100898AB3 /* PasswordApp070113 */,
+				E12019221782568100898AB3 /* Frameworks */,
+				E12019211782568100898AB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E12019211782568100898AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12019201782568100898AB3 /* PasswordApp070113.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E12019221782568100898AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1361474178BA8A900497B3C /* MessageUI.framework */,
+				A72DCAAE1783640E00D84315 /* QuartzCore.framework */,
+				A72DCAB01783641700D84315 /* CoreData.framework */,
+				E12019231782568100898AB3 /* UIKit.framework */,
+				E12019251782568100898AB3 /* Foundation.framework */,
+				E12019271782568100898AB3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E12019291782568100898AB3 /* PasswordApp070113 */ = {
+			isa = PBXGroup;
+			children = (
+				E12019461782569000898AB3 /* Initialization */,
+				E12019471782572200898AB3 /* IntroAnimation */,
+				E1201953178257D700898AB3 /* CreateAccount */,
+				E120194D1782578500898AB3 /* SignIn */,
+				E1201965178258CF00898AB3 /* AddLocker */,
+				E120195F1782588400898AB3 /* HomeView */,
+				A72DCB161783665F00D84315 /* Model */,
+				A72DCB0B1783653500D84315 /* Library */,
+				E12019711782590200898AB3 /* AddPassword */,
+				E12019591782582B00898AB3 /* PasswordFeed */,
+				E120196B178258EA00898AB3 /* PasswordItem */,
+				E120197D1782596000898AB3 /* Settings */,
+				E12019771782593200898AB3 /* EditPassword */,
+				E120192A1782568100898AB3 /* Supporting Files */,
+			);
+			path = PasswordApp070113;
+			sourceTree = "<group>";
+		};
+		E120192A1782568100898AB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E120192B1782568100898AB3 /* PasswordApp070113-Info.plist */,
+				E120192C1782568100898AB3 /* InfoPlist.strings */,
+				E120192F1782568100898AB3 /* main.m */,
+				E12019311782568100898AB3 /* PasswordApp070113-Prefix.pch */,
+				E12019351782568100898AB3 /* Default.png */,
+				E12019371782568100898AB3 /* Default@2x.png */,
+				E12019391782568100898AB3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E12019461782569000898AB3 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				E12019321782568100898AB3 /* QCAppDelegate.h */,
+				E12019331782568100898AB3 /* QCAppDelegate.m */,
+			);
+			name = Initialization;
+			sourceTree = "<group>";
+		};
+		E12019471782572200898AB3 /* IntroAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E120193B1782568100898AB3 /* QCViewController.h */,
+				E120193C1782568100898AB3 /* QCViewController.m */,
+				E120193E1782568100898AB3 /* QCViewController.xib */,
+			);
+			name = IntroAnimation;
+			sourceTree = "<group>";
+		};
+		E120194D1782578500898AB3 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E12019481782578200898AB3 /* SignInViewController.h */,
+				E12019491782578200898AB3 /* SignInViewController.m */,
+				E120194A1782578200898AB3 /* SignInViewController.xib */,
+			);
+			name = SignIn;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E1201953178257D700898AB3 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E120194E178257D300898AB3 /* CreateAccountViewController.h */,
+				E120194F178257D300898AB3 /* CreateAccountViewController.m */,
+				E1201950178257D300898AB3 /* CreateAccountViewController.xib */,
+			);
+			name = CreateAccount;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E12019591782582B00898AB3 /* PasswordFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E12019541782582300898AB3 /* PasswordFeedViewController.h */,
+				E12019551782582300898AB3 /* PasswordFeedViewController.m */,
+				E12019561782582300898AB3 /* PasswordFeedViewController.xib */,
+			);
+			name = PasswordFeed;
+			sourceTree = "<group>";
+		};
+		E120195F1782588400898AB3 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A72DCB1D1783692F00D84315 /* HomeCollectionViewController.h */,
+				A72DCB1E1783692F00D84315 /* HomeCollectionViewController.m */,
+				A72DCB1F1783692F00D84315 /* HomeCollectionViewController.xib */,
+				A72DCB5017850CFA00D84315 /* LockerCollectionViewCell.xib */,
+				A72DCB5217850DCC00D84315 /* LockerCollectionViewCell.h */,
+				A72DCB5317850DCC00D84315 /* LockerCollectionViewCell.m */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		E1201965178258CF00898AB3 /* AddLocker */ = {
+			isa = PBXGroup;
+			children = (
+				E1201960178258C800898AB3 /* AddLockerViewController.h */,
+				E1201961178258C800898AB3 /* AddLockerViewController.m */,
+				E1201962178258C800898AB3 /* AddLockerViewController.xib */,
+			);
+			name = AddLocker;
+			sourceTree = "<group>";
+		};
+		E120196B178258EA00898AB3 /* PasswordItem */ = {
+			isa = PBXGroup;
+			children = (
+				E1201966178258E400898AB3 /* PasswordItemViewController.h */,
+				E1201967178258E400898AB3 /* PasswordItemViewController.m */,
+				E1201968178258E400898AB3 /* PasswordItemViewController.xib */,
+			);
+			name = PasswordItem;
+			sourceTree = "<group>";
+		};
+		E12019711782590200898AB3 /* AddPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E120196C178258FE00898AB3 /* AddPasswordViewController.h */,
+				E120196D178258FE00898AB3 /* AddPasswordViewController.m */,
+				E120196E178258FE00898AB3 /* AddPasswordViewController.xib */,
+			);
+			name = AddPassword;
+			sourceTree = "<group>";
+		};
+		E12019771782593200898AB3 /* EditPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E12019721782592A00898AB3 /* EditPasswordViewController.h */,
+				E12019731782592A00898AB3 /* EditPasswordViewController.m */,
+				E12019741782592A00898AB3 /* EditPasswordViewController.xib */,
+			);
+			name = EditPassword;
+			sourceTree = "<group>";
+		};
+		E120197D1782596000898AB3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E12019781782595A00898AB3 /* SettingsViewController.h */,
+				E12019791782595A00898AB3 /* SettingsViewController.m */,
+				E120197A1782595A00898AB3 /* SettingsViewController.xib */,
+				E1201989178259EF00898AB3 /* ResetMaster */,
+				E1201983178259B600898AB3 /* AutoLogout */,
+				E120198D17825A6500898AB3 /* SwitchCell */,
+				E136147C178C4D0300497B3C /* ConfirmReset */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		E1201983178259B600898AB3 /* AutoLogout */ = {
+			isa = PBXGroup;
+			children = (
+				E120197E178259AD00898AB3 /* AutoLogoutViewController.h */,
+				E120197F178259AD00898AB3 /* AutoLogoutViewController.m */,
+				E1201980178259AD00898AB3 /* AutoLogoutViewController.xib */,
+			);
+			name = AutoLogout;
+			sourceTree = "<group>";
+		};
+		E1201989178259EF00898AB3 /* ResetMaster */ = {
+			isa = PBXGroup;
+			children = (
+				E1201984178259E700898AB3 /* ResetMasterPasswordViewController.h */,
+				E1201985178259E700898AB3 /* ResetMasterPasswordViewController.m */,
+				E1201986178259E700898AB3 /* ResetMasterPasswordViewController.xib */,
+			);
+			name = ResetMaster;
+			sourceTree = "<group>";
+		};
+		E120198D17825A6500898AB3 /* SwitchCell */ = {
+			isa = PBXGroup;
+			children = (
+				E120198A17825A5C00898AB3 /* CustomSwitchCell.h */,
+				E120198B17825A5C00898AB3 /* CustomSwitchCell.m */,
+				E120199017825ABC00898AB3 /* CustomSwitchCell.xib */,
+			);
+			name = SwitchCell;
+			sourceTree = "<group>";
+		};
+		E136147C178C4D0300497B3C /* ConfirmReset */ = {
+			isa = PBXGroup;
+			children = (
+				E1361477178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.h */,
+				E1361478178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.m */,
+				E1361479178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.xib */,
+			);
+			name = ConfirmReset;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E120191F1782568100898AB3 /* PasswordApp070113 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12019431782568100898AB3 /* Build configuration list for PBXNativeTarget "PasswordApp070113" */;
+			buildPhases = (
+				E120191C1782568100898AB3 /* Sources */,
+				E120191D1782568100898AB3 /* Frameworks */,
+				E120191E1782568100898AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordApp070113;
+			productName = PasswordApp070113;
+			productReference = E12019201782568100898AB3 /* PasswordApp070113.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E12019181782568100898AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Frank Rivera";
+			};
+			buildConfigurationList = E120191B1782568100898AB3 /* Build configuration list for PBXProject "PasswordApp070113" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E12019171782568100898AB3;
+			productRefGroup = E12019211782568100898AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E120191F1782568100898AB3 /* PasswordApp070113 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E120191E1782568100898AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1361473178B98D300497B3C /* btn_1.png in Resources */,
+				E120192E1782568100898AB3 /* InfoPlist.strings in Resources */,
+				E12019361782568100898AB3 /* Default.png in Resources */,
+				E12019381782568100898AB3 /* Default@2x.png in Resources */,
+				E120193A1782568100898AB3 /* Default-568h@2x.png in Resources */,
+				E12019401782568100898AB3 /* QCViewController.xib in Resources */,
+				E120194C1782578200898AB3 /* SignInViewController.xib in Resources */,
+				E1201952178257D300898AB3 /* CreateAccountViewController.xib in Resources */,
+				E12019581782582300898AB3 /* PasswordFeedViewController.xib in Resources */,
+				E1201964178258C800898AB3 /* AddLockerViewController.xib in Resources */,
+				E120196A178258E400898AB3 /* PasswordItemViewController.xib in Resources */,
+				E1201970178258FE00898AB3 /* AddPasswordViewController.xib in Resources */,
+				E12019761782592A00898AB3 /* EditPasswordViewController.xib in Resources */,
+				E120197C1782595A00898AB3 /* SettingsViewController.xib in Resources */,
+				E1201982178259AD00898AB3 /* AutoLogoutViewController.xib in Resources */,
+				E1201988178259E700898AB3 /* ResetMasterPasswordViewController.xib in Resources */,
+				E120199117825ABC00898AB3 /* CustomSwitchCell.xib in Resources */,
+				A72DCAB4178364AF00D84315 /* home_btn.png in Resources */,
+				A72DCB211783692F00D84315 /* HomeCollectionViewController.xib in Resources */,
+				A72DCB2D1783BC1700D84315 /* btn_2.png in Resources */,
+				A72DCB2E1783BC1700D84315 /* btn_3.png in Resources */,
+				A72DCB5117850CFA00D84315 /* LockerCollectionViewCell.xib in Resources */,
+				C5AAAE2D178A07F600E560F1 /* btn_4.png in Resources */,
+				E136147B178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E120191C1782568100898AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12019301782568100898AB3 /* main.m in Sources */,
+				E12019341782568100898AB3 /* QCAppDelegate.m in Sources */,
+				E120193D1782568100898AB3 /* QCViewController.m in Sources */,
+				E120194B1782578200898AB3 /* SignInViewController.m in Sources */,
+				E1201951178257D300898AB3 /* CreateAccountViewController.m in Sources */,
+				E12019571782582300898AB3 /* PasswordFeedViewController.m in Sources */,
+				E1201963178258C800898AB3 /* AddLockerViewController.m in Sources */,
+				E1201969178258E400898AB3 /* PasswordItemViewController.m in Sources */,
+				E120196F178258FE00898AB3 /* AddPasswordViewController.m in Sources */,
+				E12019751782592A00898AB3 /* EditPasswordViewController.m in Sources */,
+				E120197B1782595A00898AB3 /* SettingsViewController.m in Sources */,
+				E1201981178259AD00898AB3 /* AutoLogoutViewController.m in Sources */,
+				E1201987178259E700898AB3 /* ResetMasterPasswordViewController.m in Sources */,
+				E120198C17825A5C00898AB3 /* CustomSwitchCell.m in Sources */,
+				A72DCAF1178364F200D84315 /* MagicalImportFunctions.m in Sources */,
+				A72DCAF2178364F200D84315 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				A72DCAF3178364F200D84315 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				A72DCAF4178364F200D84315 /* NSNumber+MagicalDataImport.m in Sources */,
+				A72DCAF5178364F200D84315 /* NSObject+MagicalDataImport.m in Sources */,
+				A72DCAF6178364F200D84315 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				A72DCAF7178364F200D84315 /* NSString+MagicalDataImport.m in Sources */,
+				A72DCAF8178364F200D84315 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				A72DCAF9178364F200D84315 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				A72DCAFA178364F200D84315 /* NSManagedObject+MagicalFinders.m in Sources */,
+				A72DCAFB178364F200D84315 /* NSManagedObject+MagicalRecord.m in Sources */,
+				A72DCAFC178364F200D84315 /* NSManagedObject+MagicalRequests.m in Sources */,
+				A72DCAFD178364F200D84315 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				A72DCAFE178364F200D84315 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				A72DCAFF178364F200D84315 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				A72DCB00178364F200D84315 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				A72DCB01178364F200D84315 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				A72DCB02178364F200D84315 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				A72DCB03178364F200D84315 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				A72DCB04178364F200D84315 /* MagicalRecord+Actions.m in Sources */,
+				A72DCB05178364F200D84315 /* MagicalRecord+ErrorHandling.m in Sources */,
+				A72DCB06178364F200D84315 /* MagicalRecord+iCloud.m in Sources */,
+				A72DCB07178364F200D84315 /* MagicalRecord+Options.m in Sources */,
+				A72DCB08178364F200D84315 /* MagicalRecord+Setup.m in Sources */,
+				A72DCB09178364F200D84315 /* MagicalRecord+ShorthandSupport.m in Sources */,
+				A72DCB0A178364F200D84315 /* MagicalRecord.m in Sources */,
+				A72DCB0E178365B500D84315 /* AccountModel.xcdatamodeld in Sources */,
+				A72DCB201783692F00D84315 /* HomeCollectionViewController.m in Sources */,
+				A72DCB5417850DCC00D84315 /* LockerCollectionViewCell.m in Sources */,
+				C5AAAE30178A68D600E560F1 /* Account.m in Sources */,
+				C5AAAE33178A68D700E560F1 /* LockerName.m in Sources */,
+				E136147A178C4CF900497B3C /* ConfirmResetMasterPasswordViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E120192C1782568100898AB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E120192D1782568100898AB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E120193E1782568100898AB3 /* QCViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E120193F1782568100898AB3 /* en */,
+			);
+			name = QCViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E12019411782568100898AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E12019421782568100898AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E12019441782568100898AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordApp070113/PasswordApp070113-Prefix.pch";
+				INFOPLIST_FILE = "PasswordApp070113/PasswordApp070113-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E12019451782568100898AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordApp070113/PasswordApp070113-Prefix.pch";
+				INFOPLIST_FILE = "PasswordApp070113/PasswordApp070113-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E120191B1782568100898AB3 /* Build configuration list for PBXProject "PasswordApp070113" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12019411782568100898AB3 /* Debug */,
+				E12019421782568100898AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12019431782568100898AB3 /* Build configuration list for PBXNativeTarget "PasswordApp070113" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12019441782568100898AB3 /* Debug */,
+				E12019451782568100898AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A72DCB0C178365B500D84315 /* AccountModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A72DCB0D178365B500D84315 /* AccountModel.xcdatamodel */,
+			);
+			currentVersion = A72DCB0D178365B500D84315 /* AccountModel.xcdatamodel */;
+			path = AccountModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E12019181782568100898AB3 /* Project object */;
+}
